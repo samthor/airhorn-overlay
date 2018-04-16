@@ -1,0 +1,21 @@
+{
+  "name": "airhorn-overlay",
+  "description": "Airhorn Web Component",
+  "main": "airhorn-overlay.js",
+  "authors": [
+    "Sam Thorogood <sam.thorogood@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "airhorn",
+    "webcomponent"
+  ],
+  "homepage": "https://github.com/samthor/airhorn-overlay",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
