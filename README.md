@@ -26,6 +26,11 @@ This content is fine, but if you click on me, I'll become very loud.
 </airhorn-overlay>
 ```
 
+To make the airhorn take up more space, just style the element like you would any block element.
+It can be made to contain your entire site's content, or just one feature area etc.
+
+### Customize
+
 Set the `disabled` attribute to disable the airhorn.
 Additionally, set `overflow: hidden` on the CSS of element to 'contain' the airhorn to its bounds, rather than expanding out onto the page.
 
