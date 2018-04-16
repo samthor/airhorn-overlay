@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Airhorn Web Component</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+    }
+    airhorn-overlay {
+      background: #eee;
+      border-radius: 20px;
+      display: block;
+      text-align: center;
+      padding: 20px;
+      width: 240px;
+      max-width: 320px;
+    }
+    airhorn-overlay.contain {
+      overflow: hidden;
+    }
+    body {
+      font-family: 'Hi Melody', cursive;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      min-height: 100vh;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    form {
+      width: 100%;
+      max-width: 220px;
+    }
+    form label {
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+      line-height: 2em;
+      display: block;
+      padding: 0 12px;
+    }
+    form label:hover {
+      background: #f9f9ff;
+    }
+    form p {
+      text-align: center;
+      line-height: 1em;
+      padding: 0.5em 0;
+    }
+    a {
+      color: #33f;
+      text-decoration: none;
+    }
+  </style>
+  <script type="module">
+    import './airhorn-overlay.js';
+
+    form.addEventListener('change', (ev) => {
+      airhorn.disabled = !check_enabled.checked;
+      airhorn.classList.toggle('contain', check_overflow.checked);
+    });
+  </script>
+</head>
+<body>
+
+  <airhorn-overlay id="airhorn">
+    <h1>Airhorn Overlay</h1>
+    <p>Click Me!</p>
+  </airhorn-overlay>
+  <form id="form">
+    <label><input type="checkbox" id="check_enabled" checked /> Enabled</label>
+    <label><input type="checkbox" id="check_overflow" /> Overflow hidden</label>
+    <p>
+      Requires a browser supporting Custom Elements and Shadow DOM.
+      For more, <a href="https://github.com/samthor/airhorn-overlay">see GitHub</a>
+    </p>
+  </form>
+
+</body>
+</html>
