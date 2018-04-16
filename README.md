@@ -6,7 +6,7 @@ Quick, [load the demo](https://samthor.github.io/airhorn-overlay)! 📢
 <custom-element-demo>
   <template>
     <script src="airhorn-overlay.js" type="module"></script>
-    <airhorn-overlay>Horn!</airhorn-overlay>
+    <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
